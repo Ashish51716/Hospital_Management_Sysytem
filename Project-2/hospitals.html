@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint Hospital - Our Departments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.jsp" class="navbar-logo">
+                    <img src="Images/logo.png" alt="CarePoint Hospital Logo">
+                    <span>CarePoint</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.jsp" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.jsp" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="opd.jsp">OPD</a>
+                            <a href="radiology.jsp">Radiology</a>
+                            <a href="bloodbank.jsp">Blood Bank</a>
+                            <a href="pharmecy.jsp">Pharmacy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="hospitals.jsp" class="nav-link active">Hospitals</a></li>
+                    <li class="nav-item"><a href="gallery.jsp" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="news.jsp" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.jsp" class="nav-link">Contact</a></li>
+                    <li class="nav-buttons">
+                        <a href="login.jsp" class="btn btn-secondary">Login</a>
+                        <a href="signup.jsp" class="btn btn-primary">Sign Up</a>
+                    </li>
+                </ul>
+                
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding text-center" style="background: linear-gradient(rgba(30,64,175,0.05), rgba(30,64,175,0.05)); margin-top: 75px; padding: 60px 0 40px;">
+        <div class="container">
+            <h1 style="font-size: 2.8rem; color: var(--primary);">Clinical Departments</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 10px auto 0;">Explore the clinical divisions and specialized diagnostics available at our hospital hubs.</p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="grid grid-3">
+                <div class="glass-card dept-card">
+                    <div class="dept-image">
+                        <img src="Images/slide2.jpg" alt="General Medicine">
+                    </div>
+                    <div class="dept-info">
+                        <div>
+                            <h3>General Medicine</h3>
+                            <p>Primary health evaluations, diagnostics, cold/flu treatment, chronic disease counseling, and vaccinations. Our specialists evaluate symptoms to provide correct medical treatment pathways.</p>
+                        </div>
+                        <button class="btn btn-secondary enquiry-trigger" style="width: 100%;">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card dept-card">
+                    <div class="dept-image">
+                        <img src="Images/slide1.jpg" alt="Cardiology">
+                    </div>
+                    <div class="dept-info">
+                        <div>
+                            <h3>Cardiology</h3>
+                            <p>Advanced diagnosis and treatments for heart conditions, including bypass surgeries, ECG monitoring, chest pain therapy, hypertension management, and arterial health recovery programs.</p>
+                        </div>
+                        <button class="btn btn-secondary enquiry-trigger" style="width: 100%;">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card dept-card">
+                    <div class="dept-image">
+                        <img src="Images/slide3.jpg" alt="Neurology">
+                    </div>
+                    <div class="dept-info">
+                        <div>
+                            <h3>Neurology</h3>
+                            <p>Expert clinical care for central nervous system disorders. Specialized diagnosis for chronic migraines, memory loss, nervous breakdowns, stroke rehabilitation, and spine ailments.</p>
+                        </div>
+                        <button class="btn btn-secondary enquiry-trigger" style="width: 100%;">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card dept-card">
+                    <div class="dept-image">
+                        <img src="Images/g1.jpg" alt="Orthopedics">
+                    </div>
+                    <div class="dept-info">
+                        <div>
+                            <h3>Orthopedics</h3>
+                            <p>Bone and joint clinical support. We offer modern knee replacements, muscle therapy, fracture management, arthritis treatments, and recovery sessions with experienced physiotherapists.</p>
+                        </div>
+                        <button class="btn btn-secondary enquiry-trigger" style="width: 100%;">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card dept-card">
+                    <div class="dept-image">
+                        <img src="Images/g2.jpg" alt="Pediatrics">
+                    </div>
+                    <div class="dept-info">
+                        <div>
+                            <h3>Pediatrics</h3>
+                            <p>Dedicated medical care and support for newborns, toddlers, children, and teenagers. Offering pediatric vaccinations, developmental checks, flu management, and nutritional support.</p>
+                        </div>
+                        <button class="btn btn-secondary enquiry-trigger" style="width: 100%;">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="glass-card dept-card">
+                    <div class="dept-image">
+                        <img src="Images/g3.jpg" alt="Gynecology">
+                    </div>
+                    <div class="dept-info">
+                        <div>
+                            <h3>Gynecology</h3>
+                            <p>Compassionate clinical care supporting women's reproductive health, safe prenatal checkups, maternity packages, family welfare counselling, and menopause care programs.</p>
+                        </div>
+                        <button class="btn btn-secondary enquiry-trigger" style="width: 100%;">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="flex-column">
+                    <div class="footer-logo">
+                        <img src="Images/logo.png" alt="CarePoint Logo">
+                        <h3>CarePoint</h3>
+                    </div>
+                    <p class="footer-desc">Providing high-quality healthcare medical services, advancing clinical education, and conducting cutting-edge research.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.jsp">Home</a></li>
+                        <li><a href="about.jsp">About Us</a></li>
+                        <li><a href="hospitals.jsp">Our Hospitals</a></li>
+                        <li><a href="news.jsp">Latest News</a></li>
+                        <li><a href="contact.jsp">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="opd.jsp">OPD Services</a></li>
+                        <li><a href="radiology.jsp">Radiology Scans</a></li>
+                        <li><a href="bloodbank.jsp">Blood Bank Registry</a></li>
+                        <li><a href="pharmecy.jsp">Pharmacy Availability</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Emergency Contact</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Emergency Hotline</p>
+                                <p>+91 (0) 612 245 1000</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Email Address</p>
+                                <p>contact@carepoint.org</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Address</p>
+                                <p>Phulwarisharif, Patna, Bihar, 801507</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CarePoint Hospital Management. All rights reserved. Designed for excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="enquiry-trigger" aria-label="Open Enquiry Form">
+        <i class="fa-solid fa-clipboard-question"></i> Enquiry Now
+    </button>
+
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Enquiry Form</h3>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="enquiryForm" class="flex-column" style="gap: 16px;">
+                    <div class="form-group">
+                        <label for="enquiryName">Full Name</label>
+                        <input type="text" id="enquiryName" class="form-input" placeholder="Enter your name">
+                        <span class="form-error" id="enquiryNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryPhone">Phone Number</label>
+                        <input type="tel" id="enquiryPhone" class="form-input" placeholder="Enter your 10-digit mobile number">
+                        <span class="form-error" id="enquiryPhoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryDept">Department</label>
+                        <select id="enquiryDept" class="form-input">
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="OPD">OPD</option>
+                            <option value="Radiology">Radiology</option>
+                            <option value="Blood Bank">Blood Bank</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                        </select>
+                        <span class="form-error" id="enquiryDeptError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryMessage">Message / Enquiry</label>
+                        <textarea id="enquiryMessage" class="form-input" placeholder="Enter your query details..." style="height: 100px; resize: vertical;"></textarea>
+                        <span class="form-error" id="enquiryMessageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Enquiry</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-close-modal" style="padding: 6px 16px; font-size: 0.9rem;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <div class="toast" id="successToast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toastMessage">Submission Successful!</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint Hospital - Blood Bank Registry</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.jsp" class="navbar-logo">
+                    <img src="Images/logo.png" alt="CarePoint Hospital Logo">
+                    <span>CarePoint</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.jsp" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.jsp" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="opd.jsp">OPD</a>
+                            <a href="radiology.jsp">Radiology</a>
+                            <a href="bloodbank.jsp">Blood Bank</a>
+                            <a href="pharmecy.jsp">Pharmacy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="hospitals.jsp" class="nav-link">Hospitals</a></li>
+                    <li class="nav-item"><a href="gallery.jsp" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="news.jsp" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.jsp" class="nav-link">Contact</a></li>
+                    <li class="nav-buttons">
+                        <a href="login.jsp" class="btn btn-secondary">Login</a>
+                        <a href="signup.jsp" class="btn btn-primary">Sign Up</a>
+                    </li>
+                </ul>
+                
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding text-center" style="background: linear-gradient(rgba(30,64,175,0.05), rgba(30,64,175,0.05)); margin-top: 75px; padding: 60px 0 40px;">
+        <div class="container">
+            <h1 style="font-size: 2.8rem; color: var(--primary);">Emergency Blood Bank</h1>
+            <p style="color: var(--text-secondary); max-width: 600px; margin: 10px auto 0;">Real-time availability of blood group units, matching registries, and donor registration.</p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Blood Stock Registry</h2>
+                <p>Real-time availability of blood group units inside our emergency vault</p>
+            </div>
+            
+            <div class="grid blood-group-grid">
+                <div class="glass-card blood-card">
+                    <span class="badge badge-success" style="position: absolute; top: 15px; right: 15px;">Available</span>
+                    <div class="blood-type">A+</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 24 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">High compatibility donor type</p>
+                </div>
+
+                <div class="glass-card blood-card">
+                    <span class="badge badge-warning" style="position: absolute; top: 15px; right: 15px;">Low Stock</span>
+                    <div class="blood-type">A-</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 5 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 25%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Rare blood group type</p>
+                </div>
+
+                <div class="glass-card blood-card">
+                    <span class="badge badge-success" style="position: absolute; top: 15px; right: 15px;">Available</span>
+                    <div class="blood-type">B+</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 32 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Highly available donor group</p>
+                </div>
+
+                <div class="glass-card blood-card">
+                    <span class="badge badge-warning" style="position: absolute; top: 15px; right: 15px;">Low Stock</span>
+                    <div class="blood-type">B-</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 4 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 20%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Rare blood group type</p>
+                </div>
+
+                <div class="glass-card blood-card">
+                    <span class="badge badge-success" style="position: absolute; top: 15px; right: 15px;">Available</span>
+                    <div class="blood-type">AB+</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 18 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 60%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Universal plasma receiver</p>
+                </div>
+
+                <div class="glass-card blood-card">
+                    <span class="badge badge-danger" style="position: absolute; top: 15px; right: 15px;">Critical</span>
+                    <div class="blood-type">AB-</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 1 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 5%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Extremely rare blood group</p>
+                </div>
+
+                <div class="glass-card blood-card">
+                    <span class="badge badge-success" style="position: absolute; top: 15px; right: 15px;">Available</span>
+                    <div class="blood-type">O+</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 45 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 95%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Most common blood group</p>
+                </div>
+
+                <div class="glass-card blood-card">
+                    <span class="badge badge-warning" style="position: absolute; top: 15px; right: 15px;">Low Stock</span>
+                    <div class="blood-type">O-</div>
+                    <div style="font-size: 0.95rem; color: var(--text-secondary);">Stock Quantity: 6 Units</div>
+                    <div class="blood-progress">
+                        <div class="blood-progress-bar" style="width: 30%;"></div>
+                    </div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Universal blood donor group</p>
+                </div>
+            </div>
+            
+            <div class="glass-card text-center" style="margin-top: 50px; background: rgba(239, 68, 68, 0.03); border-color: rgba(239, 68, 68, 0.1); padding: 40px 20px;">
+                <h3 style="color: var(--danger); font-size: 1.6rem; margin-bottom: 10px;"><i class="fa-solid fa-heart-pulse"></i> Donate Blood, Save Lives</h3>
+                <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto 24px;">Your single donation can rescue up to three individuals during medical operations. Register as a donor inside our hospital database and get your donation card today.</p>
+                <button class="btn btn-accent enquiry-trigger">Register as Donor Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="flex-column">
+                    <div class="footer-logo">
+                        <img src="Images/logo.png" alt="CarePoint Logo">
+                        <h3>CarePoint</h3>
+                    </div>
+                    <p class="footer-desc">Providing high-quality healthcare medical services, advancing clinical education, and conducting cutting-edge research.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.jsp">Home</a></li>
+                        <li><a href="about.jsp">About Us</a></li>
+                        <li><a href="hospitals.jsp">Our Hospitals</a></li>
+                        <li><a href="news.jsp">Latest News</a></li>
+                        <li><a href="contact.jsp">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="opd.jsp">OPD Services</a></li>
+                        <li><a href="radiology.jsp">Radiology Scans</a></li>
+                        <li><a href="bloodbank.jsp">Blood Bank Registry</a></li>
+                        <li><a href="pharmecy.jsp">Pharmacy Availability</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Emergency Contact</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Emergency Hotline</p>
+                                <p>+91 (0) 612 245 1000</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Email Address</p>
+                                <p>contact@carepoint.org</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Address</p>
+                                <p>Phulwarisharif, Patna, Bihar, 801507</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CarePoint Hospital Management. All rights reserved. Designed for excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="enquiry-trigger" aria-label="Open Enquiry Form">
+        <i class="fa-solid fa-clipboard-question"></i> Enquiry Now
+    </button>
+
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Enquiry Form</h3>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="enquiryForm" class="flex-column" style="gap: 16px;">
+                    <div class="form-group">
+                        <label for="enquiryName">Full Name</label>
+                        <input type="text" id="enquiryName" class="form-input" placeholder="Enter your name">
+                        <span class="form-error" id="enquiryNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryPhone">Phone Number</label>
+                        <input type="tel" id="enquiryPhone" class="form-input" placeholder="Enter your 10-digit mobile number">
+                        <span class="form-error" id="enquiryPhoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryDept">Department</label>
+                        <select id="enquiryDept" class="form-input">
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="OPD">OPD</option>
+                            <option value="Radiology">Radiology</option>
+                            <option value="Blood Bank">Blood Bank</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                        </select>
+                        <span class="form-error" id="enquiryDeptError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryMessage">Message / Enquiry</label>
+                        <textarea id="enquiryMessage" class="form-input" placeholder="Enter your query details..." style="height: 100px; resize: vertical;"></textarea>
+                        <span class="form-error" id="enquiryMessageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Enquiry</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-close-modal" style="padding: 6px 16px; font-size: 0.9rem;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <div class="toast" id="successToast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toastMessage">Submission Successful!</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>

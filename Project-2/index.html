@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePoint Hospital - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.jsp" class="navbar-logo">
+                    <img src="Images/logo.png" alt="CarePoint Hospital Logo">
+                    <span>CarePoint</span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="index.jsp" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.jsp" class="nav-link">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="opd.jsp">OPD</a>
+                            <a href="radiology.jsp">Radiology</a>
+                            <a href="bloodbank.jsp">Blood Bank</a>
+                            <a href="pharmecy.jsp">Pharmacy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="hospitals.jsp" class="nav-link">Hospitals</a></li>
+                    <li class="nav-item"><a href="gallery.jsp" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="news.jsp" class="nav-link">News</a></li>
+                    <li class="nav-item"><a href="contact.jsp" class="nav-link">Contact</a></li>
+                    <li class="nav-buttons">
+                        <a href="login.jsp" class="btn btn-secondary">Login</a>
+                        <a href="signup.jsp" class="btn btn-primary">Sign Up</a>
+                    </li>
+                </ul>
+                
+                <button class="hamburger" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slide active" style="background-image: url('Images/slide1.jpg');">
+            <div class="container">
+                <div class="slide-content">
+                    <h1>Your Health Is Our Top Priority</h1>
+                    <p>CarePoint Hospital provides exceptional medical care, leading clinical teams, and state-of-the-art facilities for your health and well-being.</p>
+                    <a href="contact.jsp" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('Images/slide2.jpg');">
+            <div class="container">
+                <div class="slide-content">
+                    <h1>Exceptional Doctors, Trusted Care</h1>
+                    <p>Consult with our highly qualified medical professionals across multiple specialties to receive the best diagnostics and therapies.</p>
+                    <a href="hospitals.jsp" class="btn btn-primary">Our Departments</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('Images/slide3.jpg');">
+            <div class="container">
+                <div class="slide-content">
+                    <h1>Modern Infrastructure & Support</h1>
+                    <p>Equipped with 24x7 emergency response, modern radiology scanners, and complete pharmacy support services.</p>
+                    <a href="contact.jsp" class="btn btn-primary">Contact Us Now</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="slider-arrow slider-arrow-prev" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-arrow slider-arrow-next" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+        
+        <div class="slider-controls">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+        </div>
+    </section>
+
+    <section class="container welcome-intro">
+        <h2>Welcome to CarePoint Hospital</h2>
+        <p>In partnership with the community, CarePoint is committed to delivering compassionate, patient-centered, and high-quality care to all patients. We provide continuous support with a network of emergency specialists, outpatient departments, diagnostic facilities, and blood services.</p>
+    </section>
+
+    <section class="section-padding home-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Healthcare Services</h2>
+                <p>Explore the complete scope of medical services offered at our centers</p>
+            </div>
+            
+            <div class="grid grid-4 services-grid">
+                <div class="glass-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3>OPD Services</h3>
+                    <p>Out-Patient consultations with specialist medical clinicians. Flexible timings and expert advice.</p>
+                    <a href="opd.jsp">View Schedule <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-x-ray"></i>
+                    </div>
+                    <h3>Radiology & Imaging</h3>
+                    <p>High-resolution CT scans, MRI scans, Ultrasound, ECG diagnostics and standard X-Rays.</p>
+                    <a href="radiology.jsp">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <h3>Blood Bank</h3>
+                    <p>24x7 blood donor matching registry, stock availability indicator, and safe storage vaults.</p>
+                    <a href="bloodbank.jsp">Check Stock <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="glass-card">
+                    <div class="service-icon-box">
+                        <i class="fa-solid fa-prescription-bottle-medical"></i>
+                    </div>
+                    <h3>Pharmacy</h3>
+                    <p>24-hour pharmaceutical dispatch, prescription medicine availability, and healthcare products.</p>
+                    <a href="pharmecy.jsp">Search Drugs <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding doctors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Expert Clinicians</h2>
+                <p>Meet our leading medical professionals dedicated to your recovery</p>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="glass-card doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <img src="Images/dir.png" alt="Prof. Dr. Raju Agarwal">
+                        <div class="doctor-socials">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Raju Agarwal</h3>
+                        <p>Executive Director</p>
+                        <span>AIIMS Veteran & Senior Adviser</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <img src="Images/dct1.jpg" alt="Dr. Anish Sharma">
+                        <div class="doctor-socials">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Anish Sharma</h3>
+                        <p>Chief Cardiologist</p>
+                        <span>15+ Years Experience in Surgery</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <img src="Images/dct2.jpg" alt="Dr. Priya Patel">
+                        <div class="doctor-socials">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Priya Patel</h3>
+                        <p>Senior Pediatrician</p>
+                        <span>Expert Child Care Consultant</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card doctor-card">
+                    <div class="doctor-image-wrapper">
+                        <img src="Images/dct3.jpg" alt="Dr. Vikram Malhotra">
+                        <div class="doctor-socials">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Vikram Malhotra</h3>
+                        <p>Head of Neurology</p>
+                        <span>Specialist in Neurological Disorders</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding why-choose-us">
+        <div class="container">
+            <div class="grid why-grid">
+                <div class="why-image">
+                    <img src="Images/aiims-swasthay-hindi.jpg" alt="Healthcare Support Poster" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                </div>
+                
+                <div>
+                    <h2>Why Choose CarePoint?</h2>
+                    <p>We are a leading healthcare hub focused on safe, affordable, and accurate diagnostic and therapy services.</p>
+                    
+                    <div class="why-list">
+                        <div class="why-item">
+                            <div class="why-item-icon">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div class="why-item-text">
+                                <h4>Certified Medical Specialists</h4>
+                                <p>Our clinicians are globally recognized experts across diverse medical departments.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="why-item-text">
+                                <h4>24x7 Emergency Services</h4>
+                                <p>Continuous support for emergencies with standby trauma care and surgical units.</p>
+                            </div>
+                        </div>
+                        <div class="why-item">
+                            <div class="why-item-icon">
+                                <i class="fa-solid fa-hospital-user"></i>
+                            </div>
+                            <div class="why-item-text">
+                                <h4>Patient-Centric Treatment</h4>
+                                <p>Personalized diagnostics and therapy pathways designed for comfort and health recovery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="7634">0</div>
+                    <div class="stat-label">OPD Patients Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="34769">0</div>
+                    <div class="stat-label">Lab Reports Formulated</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2387">0</div>
+                    <div class="stat-label">Successful Surgeries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="150">0</div>
+                    <div class="stat-label">Active Expert Doctors</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Patient Testimonials</h2>
+                <p>Read honest reviews from patients who recovered under our clinical care</p>
+            </div>
+            
+            <div class="testimonial-container">
+                <div class="testimonial-slide active">
+                    <img src="Images/dct4.jpg" alt="Patient Avatar" class="testimonial-avatar">
+                    <p class="testimonial-text">"The medical treatment and caring nature of the staff at CarePoint was amazing. The consulting cardiologist answered all my doubts with extreme patience. Strongly recommended!"</p>
+                    <p class="testimonial-author">Rajesh Kumar</p>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <img src="Images/dct1.jpg" alt="Patient Avatar" class="testimonial-avatar">
+                    <p class="testimonial-text">"I received immediate response during my midnight emergency situation. The diagnostics team was quick to formulate ultrasound/radiology reports and dispatch medicines."</p>
+                    <p class="testimonial-author">Sunita Devi</p>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <img src="Images/dct2.jpg" alt="Patient Avatar" class="testimonial-avatar">
+                    <p class="testimonial-text">"We needed rare O- blood group unit during surgery, and the local blood bank registry helped matching donor details instantly. The system is extremely streamlined."</p>
+                    <p class="testimonial-author">Amit Verma</p>
+                </div>
+            </div>
+            
+            <div class="testimonial-dots">
+                <div class="testimonial-dot active"></div>
+                <div class="testimonial-dot"></div>
+                <div class="testimonial-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Need Consultation? Book Today!</h2>
+            <p>Our specialists are online and on-premises to resolve your medical query. Book an OPD appointment or send us an enquiry detail.</p>
+            <div class="cta-buttons">
+                <a href="contact.jsp" class="btn btn-primary">Book Appointment</a>
+                <button class="btn btn-secondary enquiry-trigger">Enquiry Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="grid grid-4">
+                <div class="flex-column">
+                    <div class="footer-logo">
+                        <img src="Images/logo.png" alt="CarePoint Logo">
+                        <h3>CarePoint</h3>
+                    </div>
+                    <p class="footer-desc">Providing high-quality healthcare medical services, advancing clinical education, and conducting cutting-edge research.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.jsp">Home</a></li>
+                        <li><a href="about.jsp">About Us</a></li>
+                        <li><a href="hospitals.jsp">Our Hospitals</a></li>
+                        <li><a href="news.jsp">Latest News</a></li>
+                        <li><a href="contact.jsp">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="opd.jsp">OPD Services</a></li>
+                        <li><a href="radiology.jsp">Radiology Scans</a></li>
+                        <li><a href="bloodbank.jsp">Blood Bank Registry</a></li>
+                        <li><a href="pharmecy.jsp">Pharmacy Availability</a></li>
+                    </ul>
+                </div>
+                
+                <div class="flex-column">
+                    <h4 class="footer-heading">Emergency Contact</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Emergency Hotline</p>
+                                <p>+91 (0) 612 245 1000</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Email Address</p>
+                                <p>contact@carepoint.org</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <p style="font-weight: 600; color: var(--bg-primary);">Address</p>
+                                <p>Phulwarisharif, Patna, Bihar, 801507</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 CarePoint Hospital Management. All rights reserved. Designed for excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="enquiry-trigger" aria-label="Open Enquiry Form">
+        <i class="fa-solid fa-clipboard-question"></i> Enquiry Now
+    </button>
+
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Enquiry Form</h3>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="enquiryForm" class="flex-column" style="gap: 16px;">
+                    <div class="form-group">
+                        <label for="enquiryName">Full Name</label>
+                        <input type="text" id="enquiryName" class="form-input" placeholder="Enter your name">
+                        <span class="form-error" id="enquiryNameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryPhone">Phone Number</label>
+                        <input type="tel" id="enquiryPhone" class="form-input" placeholder="Enter your 10-digit mobile number">
+                        <span class="form-error" id="enquiryPhoneError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryDept">Department</label>
+                        <select id="enquiryDept" class="form-input">
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="OPD">OPD</option>
+                            <option value="Radiology">Radiology</option>
+                            <option value="Blood Bank">Blood Bank</option>
+                            <option value="Pharmacy">Pharmacy</option>
+                        </select>
+                        <span class="form-error" id="enquiryDeptError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="enquiryMessage">Message / Enquiry</label>
+                        <textarea id="enquiryMessage" class="form-input" placeholder="Enter your query details..." style="height: 100px; resize: vertical;"></textarea>
+                        <span class="form-error" id="enquiryMessageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Enquiry</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary btn-close-modal" style="padding: 6px 16px; font-size: 0.9rem;">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <div class="toast" id="successToast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toastMessage">Submission Successful!</span>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="validation.js"></script>
+</body>
+</html>
